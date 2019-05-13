@@ -6,7 +6,7 @@ class LegNode: SCNNode {
     
     private lazy var material: SCNMaterial = {
         let material = SCNMaterial()
-        material.diffuse.contents = UIColor.white.withAlphaComponent(0.2)
+        material.diffuse.contents = UIColor.black
         
         return material
     }()

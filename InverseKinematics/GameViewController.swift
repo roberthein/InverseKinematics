@@ -9,10 +9,9 @@ class GameViewController: UIViewController {
     private lazy var bones: [BoneNode] = {
         return [
             BoneNode(),
-            BoneNode(length: 1),
-            BoneNode(length: 1),
             BoneNode(length: 2),
-            BoneNode(length: 1),
+            BoneNode(length: 2),
+            BoneNode(length: 2),
             BoneNode()
         ]
     }()
@@ -46,23 +45,27 @@ class GameViewController: UIViewController {
         ambientLightNode.light!.type = .ambient
         ambientLightNode.light!.color = UIColor.darkGray
         
-        rootNode |< [cameraNode, lightNode, ambientLightNode, leg]
+        rootNode |< [cameraNode, lightNode, ambientLightNode]
         
         scnView.scene = scene
         scnView.allowsCameraControl = true
         scnView.showsStatistics = false
-        scnView.backgroundColor = .gray
+        scnView.backgroundColor = .black
         scnView.debugOptions = [
-            .showPhysicsShapes,
-            .showLightInfluences,
-            .showLightExtents,
-            .showPhysicsFields,
-            //.showWireframe,
-            .showSkeletons,
-            .showCreases,
-            .showConstraints,
-            .showCameras
+//            .showPhysicsShapes,
+//            .showLightInfluences,
+//            .showLightExtents,
+//            .showPhysicsFields,
+//            .showWireframe,
+            .renderAsWireframe,
+//            .showSkeletons,
+//            .showCreases,
+//            .showConstraints,
+//            .showCameras
         ]
+        
+//        scene.lightingEnvironment.contents =  UIImage(named: "environment")
+//        scene.lightingEnvironment.intensity = 1.3
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap(_:)))
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(pan(_:)))
@@ -71,7 +74,7 @@ class GameViewController: UIViewController {
         rootNode |<< bones
         
         for (i, bone) in bones.enumerated() {
-            ikConstraint.setMaxAllowedRotationAngle(180, forJoint: bone)
+            ikConstraint.setMaxAllowedRotationAngle(90, forJoint: bone)
             bone.position = bones.first == bone ? SCNVector3(0, 0, 0) : SCNVector3(0, -bones[i - 1].length / 2, 0)
         }
         
