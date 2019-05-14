@@ -9,25 +9,24 @@
 /* Begin PBXBuildFile section */
 		A94EBEA3207E55F4008786DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EBEA2207E55F4008786DC /* AppDelegate.swift */; };
 		A94EBEA7207E55F4008786DC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EBEA6207E55F4008786DC /* GameViewController.swift */; };
-		A9B90D8A207F4307006577A6 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B90D89207F4307006577A6 /* SCNNode.swift */; };
 		A9B90D8E207FA969006577A6 /* SCNTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B90D8D207FA969006577A6 /* SCNTransaction.swift */; };
-		A9B90D92207FB96A006577A6 /* LegNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B90D90207FB96A006577A6 /* LegNode.swift */; };
-		A9B90D93207FB96A006577A6 /* BoneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B90D91207FB96A006577A6 /* BoneNode.swift */; };
+		A9D9DD1C228994F100C69BE8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9DD1B228994F100C69BE8 /* Models.swift */; };
+		A9D9DD1E2289958200C69BE8 /* SCNScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D9DD1D2289958200C69BE8 /* SCNScene.swift */; };
+		A9D9DD22228B217F00C69BE8 /* Environments.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D9DD21228B217F00C69BE8 /* Environments.xcassets */; };
 		A9E61FA5207FBAA400B41860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E61F9E207FBAA400B41860 /* Assets.xcassets */; };
 		A9E61FA6207FBAA400B41860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E61F9F207FBAA400B41860 /* LaunchScreen.storyboard */; };
 		A9E61FA7207FBAA400B41860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E61FA1207FBAA400B41860 /* Main.storyboard */; };
 		A9E61FA8207FBAA400B41860 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E61FA3207FBAA400B41860 /* art.scnassets */; };
-		A9E61FA9207FBAA400B41860 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9E61FA4207FBAA400B41860 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A94EBE9F207E55F4008786DC /* InverseKinematics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InverseKinematics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94EBEA2207E55F4008786DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94EBEA6207E55F4008786DC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		A9B90D89207F4307006577A6 /* SCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
 		A9B90D8D207FA969006577A6 /* SCNTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNTransaction.swift; sourceTree = "<group>"; };
-		A9B90D90207FB96A006577A6 /* LegNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegNode.swift; sourceTree = "<group>"; };
-		A9B90D91207FB96A006577A6 /* BoneNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneNode.swift; sourceTree = "<group>"; };
+		A9D9DD1B228994F100C69BE8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A9D9DD1D2289958200C69BE8 /* SCNScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNScene.swift; sourceTree = "<group>"; };
+		A9D9DD21228B217F00C69BE8 /* Environments.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Environments.xcassets; sourceTree = "<group>"; };
 		A9E61F9E207FBAA400B41860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9E61FA0207FBAA400B41860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9E61FA2207FBAA400B41860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +67,7 @@
 				A94EBEA2207E55F4008786DC /* AppDelegate.swift */,
 				A9B90D88207F42EB006577A6 /* Extensions */,
 				A94EBEA6207E55F4008786DC /* GameViewController.swift */,
-				A9B90D8F207FB96A006577A6 /* Nodes */,
+				A9D9DD1B228994F100C69BE8 /* Models.swift */,
 				A9E61F9D207FBAA400B41860 /* Resources */,
 			);
 			path = InverseKinematics;
@@ -77,19 +76,10 @@
 		A9B90D88207F42EB006577A6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A9B90D89207F4307006577A6 /* SCNNode.swift */,
 				A9B90D8D207FA969006577A6 /* SCNTransaction.swift */,
+				A9D9DD1D2289958200C69BE8 /* SCNScene.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A9B90D8F207FB96A006577A6 /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				A9B90D90207FB96A006577A6 /* LegNode.swift */,
-				A9B90D91207FB96A006577A6 /* BoneNode.swift */,
-			);
-			path = Nodes;
 			sourceTree = "<group>";
 		};
 		A9E61F9D207FBAA400B41860 /* Resources */ = {
@@ -97,6 +87,7 @@
 			children = (
 				A9E61F9E207FBAA400B41860 /* Assets.xcassets */,
 				A9E61F9F207FBAA400B41860 /* LaunchScreen.storyboard */,
+				A9D9DD21228B217F00C69BE8 /* Environments.xcassets */,
 				A9E61FA1207FBAA400B41860 /* Main.storyboard */,
 				A9E61FA3207FBAA400B41860 /* art.scnassets */,
 				A9E61FA4207FBAA400B41860 /* Info.plist */,
@@ -131,7 +122,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Robert-Hein Hooijmans";
 				TargetAttributes = {
 					A94EBE9E207E55F4008786DC = {
@@ -163,9 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E61FA7207FBAA400B41860 /* Main.storyboard in Resources */,
+				A9D9DD22228B217F00C69BE8 /* Environments.xcassets in Resources */,
 				A9E61FA8207FBAA400B41860 /* art.scnassets in Resources */,
 				A9E61FA5207FBAA400B41860 /* Assets.xcassets in Resources */,
-				A9E61FA9207FBAA400B41860 /* Info.plist in Resources */,
 				A9E61FA6207FBAA400B41860 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,10 +170,9 @@
 			files = (
 				A94EBEA7207E55F4008786DC /* GameViewController.swift in Sources */,
 				A94EBEA3207E55F4008786DC /* AppDelegate.swift in Sources */,
-				A9B90D92207FB96A006577A6 /* LegNode.swift in Sources */,
+				A9D9DD1C228994F100C69BE8 /* Models.swift in Sources */,
 				A9B90D8E207FA969006577A6 /* SCNTransaction.swift in Sources */,
-				A9B90D8A207F4307006577A6 /* SCNNode.swift in Sources */,
-				A9B90D93207FB96A006577A6 /* BoneNode.swift in Sources */,
+				A9D9DD1E2289958200C69BE8 /* SCNScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,16 +317,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29X3GG489T;
+				DEVELOPMENT_TEAM = 3TAZ984YN3;
 				INFOPLIST_FILE = InverseKinematics/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.roberthein.-DCrab";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.roberthein.-DCrab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -346,16 +336,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29X3GG489T;
+				DEVELOPMENT_TEAM = 3TAZ984YN3;
 				INFOPLIST_FILE = InverseKinematics/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.roberthein.-DCrab";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.roberthein.-DCrab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
